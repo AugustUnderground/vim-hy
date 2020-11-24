@@ -76,8 +76,8 @@ syntax keyword hyStatement
             \ lambda fn
 
 syntax keyword hyRepeat
-            \ loop recur for for*
-            \ while
+            \ for for* lfor dfor gfor sfor
+            \ loop recur while
 
 syntax keyword hyConditional
             \ if if* if-not lif lif-not
