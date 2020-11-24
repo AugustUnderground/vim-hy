@@ -141,6 +141,7 @@ syntax match hyNumber "\v<[-+]?%(0\o*|0x\x+|[1-9]\d*)N?>"
 syntax match hyNumber "\v<[-+]?%(0|[1-9]\d*|%(0|[1-9]\d*)\.\d*)%(M|[eE][-+]?\d+)?>"
 syntax match hyNumber "\v<[-+]?%(0|[1-9]\d*)/%(0|[1-9]\d*)>"
 
+syntax match hyFunction "\v\.[a-zA-Z0-9\-_><]+"
 syntax match hyVarArg "\v\&[a-zA-Z0-9\-_><]+"
 syntax match hyQuote "\v'[a-zA-Z0-9\-_><]+"
 syntax match hyQuote "\v`[a-zA-Z0-9\-_><]+"
@@ -234,6 +235,7 @@ highlight default link hyDefine        Define
 highlight default link hyAsync        Define
 highlight default link hyErrorHandling Exception
 highlight default link hyException     Type
+highlight default link hyFunction      Function
 highlight default link hyBuiltin       Function
 highlight default link hyPythonBuiltin Function
 highlight default link hyAnaphoric     Macro
