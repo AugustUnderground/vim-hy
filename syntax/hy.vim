@@ -143,6 +143,7 @@ syntax match hyNumber "\v<[-+]?%(0|[1-9]\d*)/%(0|[1-9]\d*)>"
 
 syntax match hyFunction "\v\.[a-zA-Z0-9\-_><]+"
 syntax match hyVarArg "\v\&[a-zA-Z0-9\-_><]+"
+syntax match hyQuote "\v:[a-zA-Z0-9\-_><]+"
 syntax match hyQuote "\v'[a-zA-Z0-9\-_><]+"
 syntax match hyQuote "\v`[a-zA-Z0-9\-_><]+"
 syntax match hyUnquote "\v\~[a-zA-Z0-9\-_><]+"
