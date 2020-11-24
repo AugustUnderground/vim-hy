@@ -25,7 +25,7 @@ syntax keyword hyBuiltin *map accumulate and assoc butlast calling-module-name
             \ every? filter first flatten float? fraction genexpr gensym get
             \ instance? integer integer-char? integer? interleave interpose
             \ is is-not is_not islice iterable? iterate iterator? juxt keyword
-            \ keyword? last list* list-comp macroexpand macroexpand-1 map
+            \ keyword? last let list* list-comp macroexpand macroexpand-1 map
             \ merge-with multicombinations name neg? none? nth numeric? odd? 
             \ or partition permutations pos? product quasiquote quote range
             \ read read-str reduce remove repeat repeatedly rest second setv
