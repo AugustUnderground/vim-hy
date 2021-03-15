@@ -206,7 +206,7 @@ syntax match hyError "]\|}\|)"
 
 syntax sync fromstart
 
-highlight default link hyConstant     Constant
+highlight default link hyConstant     Boolean
 highlight default link hyBoolean      Boolean
 highlight default link hyCharacter    Character
 highlight default link hyKeyword      Keyword
