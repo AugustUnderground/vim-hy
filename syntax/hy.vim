@@ -248,7 +248,8 @@ highlight default link hyStatement     Statement
 highlight default link hyMisc          PreProc
 highlight default link hyInclude       Include
 
-highlight default link hySpecial   Special
+" Special
+highlight default link hySpecial   Define 
 highlight default link hyVarArg    Special
 highlight default link hyQuote     SpecialChar
 highlight default link hyUnquote   SpecialChar
