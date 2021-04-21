@@ -28,7 +28,7 @@ syntax keyword hyBuiltin *map accumulate and assoc butlast calling-module-name
             \ keyword? last let list* list-comp macroexpand macroexpand-1 map
             \ merge-with multicombinations name neg? none? nth numeric? odd? 
             \ or partition permutations pos? product quasiquote quote range
-            \ read read-str reduce remove repeat repeatedly rest second setv
+            \ read read-str reduce remove repeat repeatedly rest second setv setx
             \ set-comp slice some string string? symbol? take take-nth
             \ take-while tee unquote unquote-splice xor zero? zip zip-longest
 
