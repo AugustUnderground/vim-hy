@@ -27,7 +27,7 @@ syntax keyword hyBuiltin *map accumulate and assoc butlast calling-module-name
             \ is is-not is_not islice iterable? iterate iterator? juxt keyword
             \ keyword? last let list* list-comp macroexpand macroexpand-1 map
             \ merge-with multicombinations name neg? none? nth numeric? odd? 
-            \ or partition permutations pos? product quasiquote quote range
+            \ of or partition permutations pos? product quasiquote quote range
             \ read read-str reduce remove repeat repeatedly rest second setv setx
             \ set-comp slice some string string? symbol? take take-nth
             \ take-while tee unquote unquote-splice xor zero? zip zip-longest
@@ -36,7 +36,7 @@ syntax keyword hyPythonBuiltin
             \ abs all any bin bool callable chr compile complex delattr dict
             \ dir divmod enumerate eval float format frozenset getattr globals
             \ hasattr hash help hex id isinstance issubclass iter len list
-            \ locals max memoryview min next object oct open ord pow repr
+            \ locals max memoryview min next object oct open ord pass pow repr
             \ reversed round set setattr sorted str sum super tuple type vars
             \ ascii bytearray bytes exec --package-- __package__ --import--
             \ __import__ --all-- __all__ --doc-- __doc__ --name-- __name__
