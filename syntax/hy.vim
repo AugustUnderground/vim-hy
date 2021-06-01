@@ -30,7 +30,8 @@ syntax keyword hyBuiltin *map accumulate and assoc butlast calling-module-name
             \ of or partition permutations pos? product quasiquote quote range
             \ read read-str reduce remove repeat repeatedly rest second setv setx
             \ set-comp slice some string string? symbol? take take-nth
-            \ take-while tee unquote unquote-splice xor zero? zip zip-longest
+            \ take-while tee unquote unquote-splice unpack-iterable unpack-mapping
+            \ xor zero? zip zip-longest
 
 syntax keyword hyPythonBuiltin
             \ abs all any bin bool callable chr compile complex delattr dict
