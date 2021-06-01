@@ -36,7 +36,7 @@ syntax keyword hyBuiltin *map accumulate and assoc butlast calling-module-name
 syntax keyword hyPythonBuiltin
             \ abs all any bin bool callable chr compile complex delattr dict
             \ dir divmod enumerate eval float format frozenset getattr globals
-            \ hasattr hash help hex id isinstance issubclass iter len list
+            \ hasattr hash help hex id int isinstance issubclass iter len list
             \ locals max memoryview min next object oct open ord pass pow repr
             \ reversed round set setattr sorted str sum super tuple type vars
             \ ascii bytearray bytes exec --package-- __package__ --import--
