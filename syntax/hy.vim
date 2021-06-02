@@ -44,7 +44,7 @@ syntax keyword hyPythonBuiltin
 
 syntax keyword hyBoolean True False
 
-syntax keyword hyConstant None Ellipsis NotImplemented Inf NaN
+syntax keyword hyConstant None Ellipsis NotImplemented -Inf Inf NaN
             \ nil " Deprecated
 
 syntax keyword hyException ArithmeticError AssertionError AttributeError
