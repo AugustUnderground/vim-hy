@@ -38,7 +38,7 @@ syntax keyword hyPythonBuiltin
             \ dir divmod enumerate eval float format frozenset getattr globals
             \ hasattr hash help hex id int isinstance issubclass iter len list
             \ locals max memoryview min next object oct open ord pass pow repr
-            \ reversed round set setattr sorted str sum super tuple type vars
+            \ reversed round set setattr sorted str sum tuple type vars
             \ ascii bytearray bytes exec --package-- __package__ --import--
             \ __import__ --all-- __all__ --doc-- __doc__ --name-- __name__
 
@@ -86,6 +86,8 @@ syntax keyword hyConditional
 
 syntax keyword hySpecial
             \ self
+            \ super
+            \ it
 
 syntax keyword hyMisc
             \ eval eval-and-compile eval-when-compile
