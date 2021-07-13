@@ -341,7 +341,7 @@ else
 	syntax match hyAnonVarIndex "i" conceal cchar=¡ contained
 	syntax match hyTagMacro contained "#" conceal cchar=x
 	syntax match hyAnonArg contained "%" conceal cchar=¡
-    syntax match hyTagMacro "#%" contains=hyTagMacro,hyAnonArg
+    "syntax match hyTagMacro "#%" contains=hyTagMacro,hyAnonArg
 	syntax match hyAnonVar "\<x[0-9i]\+\>" contains=hyAnonVarName,hyAnonVarIndex
 endif
 
