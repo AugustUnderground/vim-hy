@@ -132,6 +132,10 @@ syntax match hySymbol "\v%([a-zA-Z!$&*_+=|<.>?-]|[^\x00-\x7F])+%(:?%([a-zA-Z0-9!
 syntax match hyOpNoInplace "->"
 syntax match hyOpNoInplace "->>"
 syntax match hyOpNoInplace "as->"
+syntax match hyOpNoInplace '#%'
+syntax match hyOpNoInplace '='
+syntax match hyOpNoInplace '!='
+
 syntax match hyOpInplace "\v[!%\&\*\|\+\-\/\<>\^\&=\?]"
 
 let s:radix_chars = "0123456789abcdefghijklmnopqrstuvwxyz"
@@ -155,7 +159,7 @@ syntax match hyMeta "\v\^[a-zA-Z0-9\-_><]+"
 syntax match hyDeref "\v\@[a-zA-Z0-9\-_><]+"
 
 syntax match hyDispatch "\v#[\^'=<_@]"
-syntax match hyTagMacro "\v(#[^ \['=<_\^\*\"{@!]+)"
+"syntax match hyTagMacro "\v(#[^ \['=<_\^\*\"{@!]+)"
 syntax match hyUnpack "\v(#[\*]|[\*\*])"
 " hy permits no more than 20 params.
 syntax match hyAnonArg "%\(20\|1\d\|[1-9]\|&\)\?"
@@ -192,7 +196,7 @@ syntax match hyRegexpMod "\v\(@<=\?%(\<?[=!]|\>)"            contained display
 syntax match hyRegexpMod "\v\(@<=\?\<[a-zA-Z]+\>"            contained display
 
 syntax region hyRegexpGroup start="\\\@<!(" matchgroup=hyRegexpGroup end="\\\@<!)" contained contains=hyRegexpMod,hyRegexpQuantifier,hyRegexpBoundary,hyRegexpEscape,@hyRegexpCharClasses
-syntax region hyRegexp start=/\#"/ skip=/\\\\\|\\"/ end=/"/ contains=@hyRegexpCharClasses,hyRegexpEscape,hyRegexpQuote,hyRegexpBoundary,hyRegexpQuantifier,hyRegexpOr,hyRegexpBackRef,hyRegexpGroup,hyTagMacro keepend
+syntax region hyRegexp start=/\#"/ skip=/\\\\\|\\"/ end=/"/ contains=@hyRegexpCharClasses,hyRegexpEscape,hyRegexpQuote,hyRegexpBoundary,hyRegexpQuantifier,hyRegexpOr,hyRegexpBackRef,hyRegexpGroup keepend
 
 syntax keyword hyCommentTodo contained FIXME XXX TODO FIXME: XXX: TODO:
 
@@ -233,34 +237,34 @@ highlight default link hyRegexpGroup               hyRegexp
 highlight default link hyRegexpQuoted              hyString
 highlight default link hyRegexpQuote               hyRegexpBoundary
 
-highlight default link hyVariable      Identifier
-highlight default link hyConditional   Conditional
-highlight default link hyDefine        Define
-highlight default link hyAsync        Define
-highlight default link hyErrorHandling Exception
-highlight default link hyException     Type
-highlight default link hyFunction      Function
-highlight default link hyBuiltin       Function
-highlight default link hyPythonBuiltin Function
-highlight default link hyAnaphoric     Macro
-highlight default link hyTagMacro     Macro
-highlight default link hyRepeat        Repeat
-highlight default link hyOpNoInplace   Operator
-highlight default link hyOpInplace     Operator
-highlight default link hyStatement     Statement
-highlight default link hyMisc          PreProc
-highlight default link hyInclude       Include
+highlight default link hyVariable       Identifier
+highlight default link hyConditional    Conditional
+highlight default link hyDefine         Define
+highlight default link hyAsync          Define
+highlight default link hyErrorHandling  Exception
+highlight default link hyException      Type
+highlight default link hyFunction       Function
+highlight default link hyBuiltin        Function
+highlight default link hyPythonBuiltin  Function
+highlight default link hyAnaphoric      Macro
+highlight default link hyTagMacro       Macro
+highlight default link hyRepeat         Repeat
+highlight default link hyOpNoInplace    Operator
+highlight default link hyOpInplace      Operator
+highlight default link hyStatement      Statement
+highlight default link hyMisc           PreProc
+highlight default link hyInclude        Include
 
 " Special
-highlight default link hySpecial   Define 
-highlight default link hyVarArg    Special
-highlight default link hyQuote     SpecialChar
-highlight default link hyUnquote   SpecialChar
-highlight default link hyMeta      SpecialChar
-highlight default link hyDeref     SpecialChar
-highlight default link hyAnonArg   SpecialChar
-highlight default link hyDispatch  SpecialChar
-highlight default link hyUnpack  SpecialChar
+highlight default link hySpecial    Define 
+highlight default link hyVarArg     Special
+highlight default link hyQuote      SpecialChar
+highlight default link hyUnquote    SpecialChar
+highlight default link hyMeta       SpecialChar
+highlight default link hyDeref      SpecialChar
+highlight default link hyAnonArg    SpecialChar
+highlight default link hyDispatch   SpecialChar
+highlight default link hyUnpack     SpecialChar
 
 highlight default link hyComment     Comment
 highlight default link hyCommentTodo Todo
