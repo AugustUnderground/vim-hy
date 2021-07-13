@@ -192,7 +192,7 @@ syntax match hyRegexpMod "\v\(@<=\?%(\<?[=!]|\>)"            contained display
 syntax match hyRegexpMod "\v\(@<=\?\<[a-zA-Z]+\>"            contained display
 
 syntax region hyRegexpGroup start="\\\@<!(" matchgroup=hyRegexpGroup end="\\\@<!)" contained contains=hyRegexpMod,hyRegexpQuantifier,hyRegexpBoundary,hyRegexpEscape,@hyRegexpCharClasses
-syntax region hyRegexp start=/\#"/ skip=/\\\\\|\\"/ end=/"/ contains=@hyRegexpCharClasses,hyRegexpEscape,hyRegexpQuote,hyRegexpBoundary,hyRegexpQuantifier,hyRegexpOr,hyRegexpBackRef,hyRegexpGroup keepend
+syntax region hyRegexp start=/\#"/ skip=/\\\\\|\\"/ end=/"/ contains=@hyRegexpCharClasses,hyRegexpEscape,hyRegexpQuote,hyRegexpBoundary,hyRegexpQuantifier,hyRegexpOr,hyRegexpBackRef,hyRegexpGroup,hyTagMacro keepend
 
 syntax keyword hyCommentTodo contained FIXME XXX TODO FIXME: XXX: TODO:
 
@@ -341,7 +341,7 @@ else
 	syntax match hyAnonVarIndex "i" conceal cchar=¡ contained
 	syntax match hyTagMacro contained "#" conceal cchar=x
 	syntax match hyAnonArg contained "%" conceal cchar=¡
-    "syntax match hyTagMacro "#%" contains=hyTagMacro,hyAnonArg
+    syntax match hyTagMacro "#%" contains=hyTagMacro,hyAnonArg
 	syntax match hyAnonVar "\<x[0-9i]\+\>" contains=hyAnonVarName,hyAnonVarIndex
 endif
 
